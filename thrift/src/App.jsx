@@ -1,35 +1,50 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import NavBar from './NavBar';
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="support-page">
+      <NavBar />
+      <div className="background-image">
+        {/* Image source can be replaced with your stock image */}
+        <img src="/src/assets/supportbackgroundimage.jpg.webp" alt="Background" />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div className="search-box">
+        <input type="text" placeholder="Search help articles" />
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <div className="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div className="faq-item">
+          <h3>Question 1?</h3>
+          <p>Answer to question 1.</p>
+        </div>
+        <div className="faq-item">
+          <h3>Question 2?</h3>
+          <p>Answer to question 2.</p>
+        </div>
+        <div className="faq-item">
+          <h3>Question 3?</h3>
+          <p>Answer to question 3.</p>
+        </div>
+        <div className="faq-item">
+          <h3>Question 4?</h3>
+          <p>Answer to question 4.</p>
+        </div>
+        <div className="faq-item">
+          <h3>Question 5?</h3>
+          <p>Answer to question 5.</p>
+        </div>
+      </div>
+    </div>
   )
 }
 
 export default App
+
+
+

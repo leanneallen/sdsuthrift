@@ -65,4 +65,26 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+  .about-page {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  }
+  
+  .about-section,
+  .image-section,
+  .quick-facts-section {
+    width: 45%;
+    margin-bottom: 20px; /* Add some spacing between sections */
+  }
+  
+  .quick-facts-section ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+  }
+  
+  .quick-facts-section li {
+    margin-bottom: 10px; /* Add spacing between quick facts */
+  }
+  
