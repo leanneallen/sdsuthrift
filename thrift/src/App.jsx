@@ -1,34 +1,40 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import React, { useState } from 'react'; // Import React
+import NavBar from './NavBar'; // Import the NavBar component
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div className="about-page">
+      <NavBar /> {/* Render the NavBar component */}
+      <h2 className="about-title">About</h2>
+      <p className="cheesy-text">This is a little about what makes us so special.</p>
+      <div className="content-wrapper">
+        <div className="about-section">
+          <div className="text-box">
+            <p>
+              SDSUthrift is a thrift store dedicated to serving the needs of college students at San Diego State University. 
+              Our mission is to provide affordable and sustainable clothing options to students while promoting eco-friendly practices.
+              We strive to create a community where students can buy and sell pre-loved items, reducing waste and supporting sustainability efforts.
+            </p>
+            <p>Sound interesting?</p>
+            <button className="get-started-button">Get Started</button>
+          </div>
+        </div>
+        <div className="image-section">
+          <img src="./src/assets/thriftstorepic.jpg" alt="Thrift Store" /> {/* Corrected image source */}
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+      <div className="quick-facts-section">
+        <h3>Quick Facts</h3>
+        <ul>
+          <li>We donate 50% of our profits to save endangered pandas.</li>
+          <li>We offer a lifetime warranty on all our products.</li>
+          <li>Our store is haunted by friendly ghosts.</li>
+        </ul>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </div>
   )
 }
 

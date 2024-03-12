@@ -1,0 +1,30 @@
+.navbar {
+    background-color: #A6192E; /* Set the background color */
+    padding: 10px 0; /* Add padding to the top and bottom */
+    position: fixed; /* Position the navbar fixed */
+    width: 100%; /* Make the navbar extend fully from left to right */
+    top: 0; /* Position the navbar at the top of the window */
+    z-index: 999; /* Ensure the navbar is on top of other elements */
+  }
+  
+  .nav-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display items in a row */
+  }
+  
+  .nav-item {
+    margin-right: 20px; /* Add spacing between nav items */
+  }
+  
+  .nav-item:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+  }
+  
+  .nav-item a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Set text color */
+    font-weight: bold;
+  }
+  
