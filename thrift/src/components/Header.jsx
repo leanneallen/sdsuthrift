@@ -128,7 +128,7 @@ function Header() {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="./src/assets/CoolDog.png" />
+                <Avatar alt="Mr.Fluffy" src="./src/assets/SpookyChair.png" />
               </IconButton>
             </Tooltip>
             <Menu

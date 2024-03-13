@@ -1,41 +1,33 @@
-import * as React from 'react'; 
+import * as React from 'react'
 import Header from './components/Header'
 import ListingList from './components/ListingList'
-import Typography from '@mui/material/Typography';
-/* import createTheme from '@mui/material/styles';
-import ThemeProvider from '@mui/material/styles'; */
+import NewListing from './components/SideMenu'
+
+import Box from '@mui/material/Box'
+import Pmenu from './components/PtypMenu'
 import './App.css'
-
-/* const theme = createMuiTheme({
-  typography: {
-    allVariants: {
-      fontFamily: 'serif',
-      textTransform: 'none',
-      fontSize: 16,
-    },
-  }
-}); */
-
 
 function App() {
   return (
     <>
-    {/* <ThemeProvider theme={theme}> */}
     {/* HEADER DIV */}
       <div className ="header">
         <Header />
       </div>
+    <Pmenu/>
+    
 
     {/* BODY DIV */}
-      <Typography variant="h3" align="left">
-        {"Your Listings"}
-      </Typography>
+      {/*
       <div className ="body">
-           <ListingList />
+      <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <NewListing/>        
+          <ListingList />
+        </Box>
       </div>
-    {/* </ThemeProvider> */}
+      */}
     </>
   )
 }
 
-export default App
+export default App;

@@ -31,7 +31,7 @@ return(
     <Grid container spacing = {{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
       {listingArr.map((listing, index) => 
       (<>
-        <Grid item xs={4} sm={4} md={4} key={index}>
+        <Grid item xs={4} sm={4} md={3} key={index}>
             <Listing key={index} style ={{marginBottom: '64px', width: "200px", height: "345px"}} img = {listing.img} desc = {listing.price} title = {listing.title} />        
         </Grid>
        </>
