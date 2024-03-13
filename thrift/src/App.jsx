@@ -1,45 +1,39 @@
-import * as React from 'react';
-import ButtonUsage from './components/ButtonUsage.jsx';
-import Listing from './components/Listing'
+import * as React from 'react'; 
 import Header from './components/Header'
+import ListingList from './components/ListingList'
+import Typography from '@mui/material/Typography';
+/* import createTheme from '@mui/material/styles';
+import ThemeProvider from '@mui/material/styles'; */
 import './App.css'
 
-const listingArr = [
-  {
-    "title": "Weird Chair",
-    "desc": "It's weird and I don't like it. Buy it please.",
-    "img": "./src/assets/BikeChair.png"
-  },
-  {
-    "title": "Wooden Cabinet, Used",
-    "desc": "Good cabinet. Still works fine.",
-    "img": "./src/assets/Cabinet.png"    
-  },
-  {
-    "title": "Chicken Lamp",
-    "desc": "Cool chicken lamp :)",
-    "img": "./src/assets/ChickenLamp.png"    
-  },
-  {
-    "title": "Spooky Chair",
-    "desc": "Found it last week in the abyss.",
-    "img": "./src/assets/SpookyChair.png"    
+/* const theme = createMuiTheme({
+  typography: {
+    allVariants: {
+      fontFamily: 'serif',
+      textTransform: 'none',
+      fontSize: 16,
+    },
   }
-]
+}); */
+
 
 function App() {
   return (
     <>
+    {/* <ThemeProvider theme={theme}> */}
+    {/* HEADER DIV */}
       <div className ="header">
         <Header />
       </div>
 
+    {/* BODY DIV */}
+      <Typography variant="h3" align="left">
+        {"Your Listings"}
+      </Typography>
       <div className ="body">
-        {listingArr.map((listing, index) => (
-          <Listing position = "flex" key={index} style ={{marginBottom: '64px', width: "200px", height: "345px"}} img = {listing.img} desc = {listing.desc} title = {listing.title} />
-        ))}
-            
+           <ListingList />
       </div>
+    {/* </ThemeProvider> */}
     </>
   )
 }

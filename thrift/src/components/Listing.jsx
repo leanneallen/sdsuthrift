@@ -14,14 +14,14 @@ export default function Listing({title, img, desc}) {
           width="345"
           height="200"
           image={img}
-          alt="green iguana"
+          alt="Listing"
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom variant="h5" component="div" align="left">
             {title}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {desc}
+          <Typography variant="body1" color="text.secondary" align="left">
+            {"Price: " + desc}
           </Typography>
         </CardContent>
       </CardActionArea>

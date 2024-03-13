@@ -13,7 +13,7 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
-const pages = ['Categories', 'About', 'Support'];
+const pages = ['Home','Categories', 'About', 'Support'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function Header() {
@@ -39,7 +39,7 @@ function Header() {
     <AppBar position="fixed" style={{ top: 0, left: 0, right: 0 }}sx={{ backgroundColor: '#A6192E' }}>
       <Container maxWidth="false">
         <Toolbar disableGutters = "false">
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, color: 'white', mr: 1 }} />
+          {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, color: 'white', mr: 1 }} /> */}
           <Typography
             variant="h6"
             noWrap
