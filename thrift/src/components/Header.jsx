@@ -36,14 +36,14 @@ function Header() {
   };
 
   return (
-    <AppBar position="fixed" style={{ top: 0, left: 0, right: 0 }}sx={{ backgroundColor: '#A6192E' }}>
+    <AppBar position="fixed" style={{ top: 0, left: 0, right: 0 }} sx={{ zIndex: (theme) => theme.zIndex.drawer + 1, backgroundColor: '#A6192E' }}>
       <Container maxWidth="false">
         <Toolbar disableGutters = "false">
           {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, color: 'white', mr: 1 }} /> */}
           <Typography
             variant="h6"
             noWrap
-            component="a"
+            component="div"
             href="#Header"
             sx={{
               mr: 2,
